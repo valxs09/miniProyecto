@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Tienda de Legos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="options">
+            <a href="index2.html"><img src="lego.png"></a>
+            
+        </div>
+        <div class="options2">
+         
+            <a href="index.html"><img id ="reloj" src="reloj.png" ></a>
+        </div>
+        <button id="btnAgregar">Agregar Producto</button>
+    </header>
+    
+    <main id="productosContainer"></main>
+
+    <!-- Modal para agregar productos -->
+    <div id="modalAgregar" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Agregar Producto</h2>
+            <form id="formularioAgregar" enctype="multipart/form-data">
+                <input type="text" placeholder="Nombre" id="nombreProducto" required="">
+                <input type="text" placeholder="Descripción" id="descripcionProducto" required="">
+                <input type="number" placeholder="Precio" id="precioProducto" required="">
+                <input type="file" accept="image/*" id="imagenProducto" required="">
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Modal para actualizar productos -->
+    <div id="modalActualizar" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Actualizar Producto</h2>
+            <form id="formularioActualizar">
+                <input type="hidden" id="productoId">
+                <input type="text" placeholder="Nombre" id="nombreProductoActualizar" required="">
+                <input type="text" placeholder="DescripciÃ³n" id="descripcionProductoActualizar" required="">
+                <input type="number" placeholder="Precio" id="precioProductoActualizar" required="">
+                <input type="file" accept="image/*" id="imagenProductoActualizar" required="">
+                <button type="submit">Actualizar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body></html>

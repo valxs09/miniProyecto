@@ -1,0 +1,152 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6fa; 
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  header {
+    background-color: #9370DB;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #productosContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .producto {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .producto p.descripcion {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+
+  .producto p.precio {
+    font-size: 18px;
+    color: #9370DB; 
+    margin-bottom: 10px;
+  }
+  
+
+  .producto h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 500px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: #9370DB; /* Lila */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #8a68c9; 
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+
+  @media (max-width: 1024px) {
+    #productosContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #productosContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  .options {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .options2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .options2 {
+    margin-right: 1200px;
+  }
+  
